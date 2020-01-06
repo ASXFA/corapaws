@@ -11740,7 +11740,7 @@ a:focus {
 }
 
 .bg-login-image {
-	background: url("http://localhost/corapaws/assets/logo/logo_login.png");
+	background: url("http://localhost/corapaws/assets/logo/icon.png");
 	background-position: center;
 	background-size: cover;
 }

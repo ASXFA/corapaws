@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title><?= $judul ?></title>
 
   <!-- Custom fonts for this template-->
   <link href="<?= base_url() ?>assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,8 @@
 
   <!-- Custom styles for this template-->
   <link href="<?= base_url() ?>assets/admin/css/sb-admin-2.min.css" rel="stylesheet">
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="<?= base_url() ?>assets/admin/lightbox/dist/css/lightbox.min.css">
 
 </head>
 

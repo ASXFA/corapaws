@@ -8299,14 +8299,14 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
     .ftco-navbar-light.scrolled .nav-item.active > a {
-      color: #dbcc8f !important; }
+      color: #db1d16 !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
-      color: #000000 !important;
-      background: #dbcc8f;
+      color: #ffff !important;
+      background: #db1d16;
       border: none !important; }
       .ftco-navbar-light.scrolled .nav-item.cta > a span {
         display: inline-block;
-        color: #000000 !important; }
+        color: #ffff !important; }
     .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
       border-color: #dbcc8f; }
     .ftco-navbar-light.scrolled .nav-item .dropdown-menu {
@@ -8522,7 +8522,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     height: 750px;
     z-index: 0;
-    background: #dbcc8f; }
+    background: #ebebeb; }
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
       background-repeat: no-repeat;
@@ -8612,7 +8612,7 @@ h1, h2, h3, h4, h5,
           text-transform: uppercase;
           display: inline-block;
           color: #fff;
-          background: #000000;
+          background: #ebc944;
           padding: 2px 5px; }
           @media (min-width: 992px) {
             .owl-carousel.home-slider .slider-item .slider-text .subheading {
@@ -8647,7 +8647,7 @@ h1, h2, h3, h4, h5,
               font-size: 23px; } }
         .owl-carousel.home-slider .slider-item .slider-text .btn-custom {
           color: #fff;
-          background: #c2a942;
+          background: #db1d16;
           padding: 10px 20px; }
     .owl-carousel.home-slider .owl-nav {
       position: absolute;
@@ -8863,7 +8863,7 @@ h1, h2, h3, h4, h5,
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      background: #dbcc8f;
+      background: #ffdf61;
       width: 230px;
       height: 230px;
       margin: 0 auto;
@@ -8985,13 +8985,13 @@ h1, h2, h3, h4, h5,
         background: #000000;
         color: #fff; }
         .product .text .bottom-area a.add-to-cart:hover {
-          background: #dbcc8f;
-          color: #fff; }
+          background: #ffdf61;
+          color: #000000; }
       .product .text .bottom-area a.buy-now {
         background: #fff;
         color: #000000; }
         .product .text .bottom-area a.buy-now:hover {
-          background: #dbcc8f;
+          background: #db1d16;
           color: #fff; }
       @media (max-width: 991.98px) {
         .product .text .bottom-area {
@@ -9693,24 +9693,25 @@ textarea.form-control {
 
 .ftco-footer-social li {
   list-style: none;
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 0;
   display: inline-block; }
   .ftco-footer-social li a {
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
     display: block;
     float: left;
-    background: #dbcc8f;
+    background: #db1d16;
     border-radius: 50%;
     position: relative; }
     .ftco-footer-social li a span {
       position: absolute;
-      font-size: 26px;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      font-size: 15px;
+      text-align:center;
+      top: 35%;
+      left: 35%;
+      -webkit-transform: translate(-25%, -25%);
+      -ms-transform: translate(-25%, -25%);
+      transform: translate(-25%, -25%);
       color: #fff; }
     .ftco-footer-social li a:hover {
       color: #000000; }

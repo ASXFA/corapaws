@@ -27,31 +27,23 @@
   MENU
 </div>
 
-<!-- Nav Item - Pages Collapse Menu -->
+<!-- Clothing ALL -->
 <li class="nav-item">
-  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+  <a class="nav-link" href="<?= base_url() ?>admin/clothing">
     <i class="fas fa-tshirt"></i>
-    <span>Clothing</span>
-  </a>
-  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-    <div class="bg-white py-2 collapse-inner rounded">
-      <h6 class="collapse-header">Clothing Category :</h6>
-      <a class="collapse-item" href="<?= base_url() ?>clothing/men">Men</a>
-      <a class="collapse-item" href="<?= base_url() ?>clothing/women">Women</a>
-    </div>
-  </div>
+    <span>Clothing</span></a>
 </li>
 
 <!-- custom socks -->
 <li class="nav-item">
-  <a class="nav-link" href="<?= base_url() ?>custom">
+  <a class="nav-link" href="<?= base_url() ?>admin/custom">
     <i class="fas fa-socks"></i>
     <span>Custom</span></a>
 </li>
 
 <!-- Transcation -->
 <li class="nav-item">
-  <a class="nav-link" href="<?= base_url() ?>custom">
+  <a class="nav-link" href="<?= base_url() ?>admin/transaction">
     <i class="fas fa-money-bill"></i>
     <span>Transaction</span></a>
 </li>

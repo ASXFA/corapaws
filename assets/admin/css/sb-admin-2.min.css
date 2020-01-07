@@ -518,12 +518,19 @@ mark {
 }
 
 .img-thumbnail {
-	padding: .25rem;
 	background-color: #fff;
 	border: 1px solid #dddfeb;
 	border-radius: .35rem;
-	max-width: 100%;
+	max-width: 80%;
 	height: auto
+}
+
+.img-lightbox{
+	display: inline-block;
+	border: 1px solid #dddfeb;
+	border-radius: 50%;
+	height: auto;
+	width: 40%;
 }
 
 .figure {
@@ -1625,17 +1632,43 @@ pre code {
 	color: #858796
 }
 
+.wd-400 {
+	width: 400px;
+}
+
+.wd-100 {
+	width: 100px;
+}
+
+td.wd-100 a {
+	display: block;
+	positition: absolute;
+	text-align: center;
+}
+
+.wd-50 {
+	width: 50px;
+}
+
+td.wd-50 a {
+	display: block;
+	positition: absolute;
+	text-align: center;
+}
+
 .table td,
 .table th {
 	padding: .75rem;
 	vertical-align: top;
+	text-align: justify;
 	border-top: 1px solid #e3e6f0
 }
 
 .table thead th {
-	vertical-align: bottom;
+	vertical-align: center;
 	border-bottom: 2px solid #e3e6f0
 }
+
 
 .table tbody+tbody {
 	border-top: 2px solid #e3e6f0

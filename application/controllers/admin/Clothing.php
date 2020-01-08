@@ -51,5 +51,14 @@ class Clothing extends CI_Controller {
 		$this->load->view('admin/layout/navbar');
 		$this->load->view('admin/detail_product',$data);
 		$this->load->view('admin/layout/footer_modal');
-    }
+	}
+	
+	public function delete_product($id)
+	{
+		$where = array('product_id' => $id);
+		$this->clothing_model->delete_product($where);
+		$this->session->set_flashdata('message',"Your file has been deleted ! ");
+		redirect('clothing');
+	}
+
 }

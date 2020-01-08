@@ -10,9 +10,14 @@ class Clothing_model extends CI_Model
     public function getById($id)
     {
         $where = array('product_id' => $id);
-        return $this->db->get('product',$where)->result();
+        return $this->db->get_where('product',$where)->result();
     }
-
+    
+    public function delete_product($where)
+    {
+        $this->db->where($where);
+        $this->db->delete('product');
+    }
     // another tables function
 
     public function imageById($id)

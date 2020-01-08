@@ -30,18 +30,7 @@
                 ?>
                 <tr>
                     <td><?= $no++ ?></td>
-                    <td><?= $prod->product_id ?></td>
-                    <!-- Lightbox -->
-                    <!-- <td class="wd-100" >
-                    <?php foreach ($image as $img) : 
-                        if (($img->product_image_id_product==$prod->product_id) && ($img->product_image_status=="primary")) {
-                            echo "<a class='example-image-link' href='".base_url()."assets/product/image/".$img->product_image_name."' data-lightbox='example-set' data-title='".$prod->product_name."'><img class='example-image img-thumbnail' src='".base_url()."assets/product/image/".$img->product_image_name."' alt=''/></a>";
-                        }elseif (($img->product_image_id_product==$prod->product_id) && ($img->product_image_status=="secondary")){
-                            echo "<a class='example-image-link' href='".base_url()."assets/product/image/".$img->product_image_name."' data-lightbox='example-set' data-title='".$prod->product_name."' hidden><img class='example-image img-thumbnail' src='".base_url()."assets/product/image/".$img->product_image_name."' alt=''/></a>";
-                        }
-                        endforeach
-                    ?></td> -->
-                    <!-- End Lightbox -->
+                    <td><?= $prod->product_id ?></td>                    
                     <td><?= $prod->product_name ?></td>
                     <?php if ($prod->product_category == 1) {
                         echo "<td>MEN</td>";
@@ -53,7 +42,7 @@
                     <td class="wd-50">
                         <a href="<?= base_url() ?>admin/clothing/detail_product/<?= $prod->product_id ?>" class="btn btn-primary mb-2" ><i class="fas fa-eye" ></i></a>
                         <a href="<?= base_url() ?>admin/clothing/edit_product" class="btn btn-warning mb-2" ><i class="fas fa-edit" ></i></a>
-                        <a href="" class="btn btn-danger mb-2" ><i class="fas fa-trash" ></i></a>
+                        <a href="#" class="btn btn-danger mb-2" data-toggle="modal" data-target="#deleteModal<?= $prod->product_id ?>" ><i class="fas fa-trash" ></i></a>
                     </td>
                 </tr>
                 <?php endforeach ?>

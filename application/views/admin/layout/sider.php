@@ -4,7 +4,7 @@
 <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
   <div class="sidebar-brand-icon rotate-n-15">
-    <img class="img-profile rounded-circle w-100" src="<?= base_url() ?>assets/logo/logo_p1.png" > </img>
+    <img class="img-profile rounded-circle w-75" src="<?= base_url() ?>assets/logo/logo_p1.png" > </img>
   </div>
   <div class="sidebar-brand-text mx-3 text-gray-400">Corapaws Admin</div>
 </a>

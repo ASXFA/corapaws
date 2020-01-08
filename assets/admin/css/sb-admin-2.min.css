@@ -525,12 +525,12 @@ mark {
 	height: auto
 }
 
-.img-lightbox{
-	display: inline-block;
-	border: 1px solid #dddfeb;
+.img-lightbox {
+	display: inline;
+	border: 2px solid #6b6d7d;
 	border-radius: 50%;
 	height: auto;
-	width: 40%;
+	width: 19%;
 }
 
 .figure {
@@ -6754,6 +6754,10 @@ a.close.disabled {
 
 .align-text-bottom {
 	vertical-align: text-bottom !important
+}
+
+.align-text-detail {
+	text-align: justify;
 }
 
 .align-text-top {

@@ -263,7 +263,8 @@ textarea {
 	margin: 0;
 	font-family: inherit;
 	font-size: inherit;
-	line-height: inherit
+	line-height: inherit;
+	resize: none;
 }
 
 button,
@@ -317,7 +318,7 @@ input[type=time] {
 
 textarea {
 	overflow: auto;
-	resize: vertical
+	resize: none;
 }
 
 fieldset {
@@ -2139,7 +2140,8 @@ select.form-control[size] {
 }
 
 textarea.form-control {
-	height: auto
+	height: auto;
+	resize: none;
 }
 
 .form-group {

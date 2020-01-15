@@ -14,10 +14,8 @@
                         <h4 class="card-title"><?= $prod->product_name ?> <b>( <?= $prod->product_id ?> )</b></h4>
                         <!-- Lightbox -->
                             <div>
-                            <?php foreach ($image as $img) : 
-                                echo "<a class='img-lightbox m-2' href='".base_url()."assets/product/image/".$img->product_image_name."' data-lightbox='example-set' data-title='".$prod->product_name."'><img class='img-lightbox' src='".base_url()."assets/product/image/".$img->product_image_name."' alt=''/></a>";
-                                endforeach
-                            ?>
+                                <?php echo "<a class='img-lightbox m-2' href='".base_url()."assets/img/design/".$prod->product_image."' data-lightbox='example-set' data-title='".$prod->product_image."'><img class='img-lightbox' src='".base_url()."assets/img/design/".$prod->product_image."' alt=''/></a>";
+                                ?>
                             </div>
                         <h5 class="card-tittle mt-3 mb-3">Description</h5>
                         <p class="card-text mt-2 align-text-detail "><?= $prod->product_desc ?></p>

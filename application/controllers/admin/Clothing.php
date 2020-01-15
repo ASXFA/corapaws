@@ -43,14 +43,56 @@ class Clothing extends CI_Controller {
     {
         $data['judul'] = "Admin Page";
         $data['product'] = $this->clothing_model->getById($id);
-        $data['image'] = $this->clothing_model->imageById($id);
-        $data['size'] = $this->clothing_model->size();
-        $data['color'] = $this->clothing_model->color();
 		$this->load->view('admin/layout/header',$data);
 		$this->load->view('admin/layout/sider');
 		$this->load->view('admin/layout/navbar');
 		$this->load->view('admin/detail_product',$data);
 		$this->load->view('admin/layout/footer_modal');
+	}
+
+	public function add_product()
+	{
+		$data['judul'] = "Admin Page";
+		$data['code'] = $this->clothing_model->buat_kode();
+		$data['size'] = $this->clothing_model->size();
+		$data['color'] = $this->clothing_model->color();
+		$this->load->view('admin/layout/header',$data);
+		$this->load->view('admin/layout/sider');
+		$this->load->view('admin/layout/navbar');
+		$this->load->view('admin/add_product',$data);
+		$this->load->view('admin/layout/footer_modal');
+	}
+
+	public function action_add_product()
+	{
+		$this->form_validation->set_rules('product_name', 'Product Name', 'required');
+		$this->form_validation->set_rules('size[]', 'Size', 'required');
+		$this->form_validation->set_rules('color[]', 'Color', 'required');
+		$this->form_validation->set_rules('price', 'Price', 'required');
+		$this->form_validation->set_rules('product_desc', 'Product Description', 'required');
+		if ($this->form_validation->run() == false) {
+			$this->load->view('admin/add_product');
+		}else {
+			$config['upload_path'] = './assets/img/design';
+			$config['allowed_types'] = 'gif|jpg|jpeg|png';
+			$config['overwrite'] = true;
+			$config['max_size'] = 10240;
+			$config['max_width'] = 5000;
+			$config['max_height'] = 5000;        
+			$this->load->library('upload', $config);
+			if ($this->upload->do_upload('product_images')) {
+				$data = array('upload_data' => $this->upload->data());
+				$img = $data['upload_data']['file_name'];
+				$sizes = implode(",",$this->input->post('size[]'));
+				$colors = implode(",",$this->input->post('color[]'));
+				$this->clothing_model->addNewProduct($sizes,$colors,$img);
+				$this->session->set_flashdata('addProductSuccess','Added data success');
+				redirect('admin/clothing');
+			} else {
+				$this->session->set_flashdata('failupload','Image failed to upload');
+				redirect('admin/clothing/add_product');
+			}
+		}
 	}
 	
 	public function delete_product($id)

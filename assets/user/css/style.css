@@ -8729,6 +8729,17 @@ h1, h2, h3, h4, h5,
 .bg-primary {
   background: #dbcc8f; }
 
+  .btn2 {
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09); }
+
 .btn {
   font-size: 12px;
   cursor: pointer;
@@ -8739,11 +8750,31 @@ h1, h2, h3, h4, h5,
   -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09); }
+
+  .btn2:hover, .btn2:active, .btn2:focus {
+    outline: none; }
+  .btn2.btn-scrb {
+    background: #00ff2a;
+    border: 1px solid #00ff40;
+    color: #fff; }
+    .btn2.btn-scrb:hover {
+      border: 1px solid #dbcc8f;
+      background: transparent;
+      color: #dbcc8f; }
+    .btn2.btn-scrb.btn-outline-primary {
+      border: 1px solid #dbcc8f;
+      background: transparent;
+      color: #dbcc8f; }
+      .btn2.btn-scrb.btn-outline-primary:hover {
+        border: 1px solid transparent;
+        background: #dbcc8f;
+        color: #fff; }
+
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #dbcc8f;
-    border: 1px solid #dbcc8f;
+    background: #db8f8f;
+    border: 1px solid #f59191;
     color: #fff; }
     .btn.btn-primary:hover {
       border: 1px solid #dbcc8f;

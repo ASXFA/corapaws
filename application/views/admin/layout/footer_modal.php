@@ -37,31 +37,6 @@
       </div>
     </div>
   </div>
-  <!-- Logout Modal-->
-  <?php foreach ($product as $prod) : ?>
-  <div class="modal fade" id="deleteModal<?= $prod->product_id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Are you sure want to delete this data ?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-          <form action="<?= base_url();?>admin/clothing/delete_product/<?= $prod->product_id; ?>" method="post" enctype="multipart/form-data">
-            <div class="modal-body">
-                <input type="text" name="product_id" class="form-control" value="<?= $prod->product_id ?>" hidden>
-            </div>
-        <div class="modal-body">Select "Delete" below if you are ready to delete your data.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <button class="btn btn-danger" type="submit">Delete</button>
-        </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <?php endforeach ?>
 
   <!-- Bootstrap core JavaScript-->
   <script src="<?= base_url() ?>assets/admin/vendor/jquery/jquery.min.js"></script>
